@@ -1,0 +1,13 @@
+com.gestion
+com.gestion.configuracion
+com.gestion.gestion_negocio.controladores
+com.gestion.gestion_negocio.daos
+com.gestion.gestion_negocio.dtos
+com.gestion.gestion_negocio.repositorios
+com.gestion.gestion_negocio.servicios
+com.gestion.gestion_usuarios.controladores
+com.gestion.gestion_usuarios.daos
+com.gestion.gestion_usuarios.dtos
+com.gestion.gestion_usuarios.repositorios
+com.gestion.gestion_usuarios.seguridad
+com.gestion.gestion_usuarios.servicios

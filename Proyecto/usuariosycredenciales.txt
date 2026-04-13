@@ -1,0 +1,3 @@
+administrador: administrador@gmail.com claveSegura2!
+usuario: usuario@gmail.com claveSegura2!
+dominio: pablodominio.sbs

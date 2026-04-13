@@ -1,0 +1,65 @@
+
+/* ================================
+   --- NAVBAR ---
+   ================================ */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5e0c3;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  flex-wrap: wrap;
+}
+
+.nav-left { display: flex; align-items: center; gap: 2rem; }
+.nav-logo { font-family: 'Kalam', cursive; font-size: 1.5rem; }
+
+.navbar nav ul { display: flex; list-style: none; gap: 1.5rem; }
+.navbar a { text-decoration: none; color: #3b2416; }
+.navbar a:hover { text-decoration: underline; }
+
+.nav-right { display: flex; align-items: center; gap: 1rem; }
+.search-bar { 
+  display: flex; align-items: center; background-color: #fff; border-radius: 20px; 
+  overflow: hidden; border: 1px solid #d1b89c; 
+}
+.search-bar input { border: none; outline: none; padding: 0.4rem 0.8rem; font-size: 0.9rem; width: 160px; }
+.search-bar button { background: none; border: none; padding: 0.4rem 0.6rem; cursor: pointer; font-size: 1rem; }
+
+.icons { display: flex; align-items: center; gap: 0.8rem; }
+.icon { font-size: 1.3rem; color: #3b2416; text-decoration: none; }
+.icon:hover { opacity: 0.8; }
+
+/* ================================
+   --- BANNER ---
+   ================================ */
+.banner {
+  display: flex;
+  align-items: stretch;
+  background-color: #c27a35;
+  color: #fff;
+  width: 100vw;
+  padding-left: 5%;
+  gap: 2rem;
+  overflow: hidden;
+}
+
+.banner-text {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+.banner-text h3 { font-size: 1.7rem; margin-bottom: 0.5rem; }
+.banner-text h1 { font-family: 'Kalam', cursive; font-size: 4rem; line-height: 1.2; margin-bottom: 0.5rem; }
+.banner-text span { color: #6ab04c; }
+.banner-text p { font-size: 1.1rem; margin-bottom: 1rem; }
+
+.banner-img { flex: 1; display: flex; overflow: hidden; }
+.banner-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.nav-logo img {
+  width: 30px;  /* Ajusta el tamaño a lo que prefieras */
+  height: auto; /* Mantiene la proporción original */
+}

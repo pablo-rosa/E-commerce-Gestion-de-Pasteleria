@@ -1,0 +1,126 @@
+body {
+  background-color: #f5e0c3;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* ======== ESTILOS PARA EL CONTENIDO PRINCIPAL ======== */
+.container {
+  background-color: white;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(59, 36, 22, 0.1);
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* Título principal */
+h3 {
+  color: #3b2416;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* ======== MENSAJES DE CONFIRMACIÓN Y ERROR ======== */
+
+/* Mensaje de éxito */
+.alert-success {
+  background-color: #c7e6b1;
+  border-color: #a4d8a2;
+  color: #3b2416;
+  font-weight: bold;
+  padding: 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  margin-top: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+/* Mensaje de error */
+.alert-danger {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  color: #3b2416;
+  font-weight: bold;
+  padding: 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  margin-top: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.alert-success, .alert-danger {
+  text-align: center;
+}
+
+/* ======== ESTILOS DE BOTONES ======== */
+.text-center a, .alert-success .btn, .alert-danger .btn {
+  padding: 10px 25px;
+  border: 2px solid #3b2416;
+  background: none;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  color: #3b2416;
+}
+
+.text-center a:hover, .alert-success .btn:hover, .alert-danger .btn:hover {
+  background-color: #3b2416;
+  color: white;
+}
+
+.text-center p {
+  color: #3b2416;
+  font-size: 1rem;
+}
+
+.text-center p a {
+  color: #6ab04c;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.text-center p a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* ======== RENDIMIENTO Y DISEÑO RESPONSIVO ======== */
+@media (max-width: 768px) {
+  .container {
+    padding: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .alert-success, .alert-danger {
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+
+  .text-center a {
+    font-size: 0.9rem;
+    padding: 12px 20px;
+  }
+
+  .text-center p {
+    font-size: 0.9rem;
+  }
+}

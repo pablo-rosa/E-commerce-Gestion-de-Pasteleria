@@ -1,0 +1,260 @@
+/* ======== ESTRUCTURA GENERAL ======== */
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* ======== PANEL IZQUIERDO ======== */
+.login-left {
+  flex: 1;
+  background: linear-gradient(135deg, #f5e0c3 0%, #f8ede3 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-left::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1200&q=80');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.login-left .logo {
+  position: relative;
+  z-index: 1;
+  width: 110px;
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(0px 2px 6px rgba(0,0,0,0.2));
+}
+
+.login-left h1 {
+  position: relative;
+  z-index: 1;
+  font-size: 2.5rem;
+  color: #3b2416;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+.login-left h2 {
+  position: relative;
+  z-index: 1;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #6a4c3b;
+  margin-bottom: 2rem;
+}
+
+.login-left p {
+  position: relative;
+  z-index: 1;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4a3426;
+  max-width: 340px;
+}
+
+/* ======== PANEL DERECHO ======== */
+.login-right {
+  flex: 1;
+  background-color: #fff8f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  width: 90%;
+  max-width: 380px;
+  background-color: #ffffff;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(59, 36, 22, 0.15);
+  border: 1px solid rgba(209, 184, 156, 0.2);
+}
+
+.small-logo {
+  width: 50px;
+  display: block;
+  margin: 0 auto 0.75rem auto;
+}
+
+.login-box h2 {
+  text-align: center;
+  color: #3b2416;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+/* ======== BOTÓN GOOGLE ======== */
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 45px;
+  background-color: #fff;
+  border: 1px solid #d1b89c;
+  border-radius: 5px;
+  color: #3b2416;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.google-btn:hover {
+  background-color: #f8ede3;
+}
+
+.google-btn img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+/* ======== DIVISOR ======== */
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #a17c56;
+  font-size: 0.9rem;
+  margin: 1.5rem 0;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #d1b89c;
+}
+
+.divider:not(:empty)::before {
+  margin-right: 0.75em;
+}
+
+.divider:not(:empty)::after {
+  margin-left: 0.75em;
+}
+
+/* ======== CAMPOS ======== */
+.input-field {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #d1b89c;
+  background-color: #fff8f2;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.input-field::placeholder {
+  color: #9a8572;
+  font-weight: 500;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #6ab04c;
+  background-color: #fff;
+  box-shadow: 0 0 0 2px rgba(106,176,76,0.15);
+}
+
+/* ======== BOTÓN PRINCIPAL ======== */
+.login-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #3b2416;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  transition: background-color 0.3s ease, transform 0.15s ease;
+  font-size: 0.95rem;
+}
+
+.login-btn:hover {
+  background-color: #6ab04c;
+  transform: translateY(-2px);
+}
+
+/* ======== TEXTO INFERIOR ======== */
+.bottom-text {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #3b2416;
+}
+
+.bottom-text a {
+  color: #6ab04c;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.bottom-text a:hover {
+  text-decoration: underline;
+}
+
+/* ======== MENSAJE DE ERROR ======== */
+.error {
+  color: red; /* Rojo para el mensaje */
+  font-size: 16px; /* Tamaño de la fuente */
+  font-weight: bold; /* Hacer el texto en negrita */
+  padding: 10px; /* Un poco de espacio alrededor */
+  background-color: #f8d7da; /* Fondo color rojo claro */
+  border: 1px solid #f5c6cb; /* Borde rosa claro */
+  border-radius: 5px; /* Bordes redondeados */
+}
+/* ======== MENSAJE DE ÉXITO ======== */
+.success {
+  color: #155724; /* Verde oscuro para el mensaje */
+  font-size: 16px; /* Tamaño de la fuente */
+  font-weight: bold; /* Hacer el texto en negrita */
+  padding: 10px; /* Un poco de espacio alrededor */
+  background-color: #d4edda; /* Fondo color verde claro */
+  border: 1px solid #c3e6cb; /* Borde verde claro */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 850px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .login-left, .login-right {
+    flex: none;
+    width: 100%;
+    height: auto;
+  }
+
+  .login-left {
+    padding: 2rem 1rem;
+  }
+
+  .login-left .logo {
+    width: 80px;
+  }
+
+  .login-box {
+    box-shadow: none;
+    border: none;
+  }
+}

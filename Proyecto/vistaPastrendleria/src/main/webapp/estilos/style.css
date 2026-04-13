@@ -1,0 +1,234 @@
+/* ================================
+   --- ESTILOS GENERALES ---
+   ================================ */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Montserrat', sans-serif; background-color: #f8ede3; color: #3b2416; }
+
+
+
+/* ================================
+   --- BOTONES UNIFICADOS ---
+   ================================ */
+.btn {
+  padding: 10px 25bzpx;
+  border: 2px solid #3b2416;
+  background: none;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn:hover { background-color: #3b2416; color: #fff; }
+
+/* ================================
+   --- PRODUCTOS ---
+   ================================ */
+.productos { text-align: center; padding: 4rem 2rem; background-color: #fdf6f0; }
+.productos h2 { font-weight: 800; margin-bottom: 2rem; }
+
+.productos-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; }
+.producto { max-width: 250px; }
+.producto img { width: 100%; border-radius: 10px; }
+.producto h3 { margin-top: 10px; font-weight: 700; }
+.producto p { font-size: 0.9rem; }
+
+/* ================================
+   --- INFO ---
+   ================================ */
+.info { padding: 4rem 2rem; text-align: center; background-color: #fff; }
+.info-icons { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 2rem; }
+.icon-item { width: 200px; font-size: 1.2rem; }
+
+.envio-sevilla {
+  display: flex;
+  width: 100%;
+  height: 350px; /* o la altura que prefieras */
+  background-color: #f5e0c3;
+  border-radius: 8px;
+  overflow: hidden; /* para que la imagen no desborde */
+}
+
+.envio-sevilla img {
+  flex: 1 1 50%; /* ocupa 50% del ancho */
+  height: 100%;
+  object-fit: cover; /* recorta la imagen para que no se distorsione */
+  border-radius: 8px 0 0 8px; /* redondeado solo en la izquierda */
+  margin: 0; /* elimina margen si hubiera */
+  padding: 0; /* elimina padding si hubiera */
+  display: block; /* elimina espacio inferior */
+}
+
+.envio-texto {
+  flex: 1 1 50%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.envio-texto h2 {
+  font-size: 3.5rem; /* aumento del tamaño de la letra */
+  margin-bottom: 1.5rem; /* espacio entre el título y el botón */
+}
+
+.envio-texto button {
+  font-size: 1rem; /* aumento del tamaño de la letra */
+  margin-top: 0.5rem; /* opcional, un poquito más de espacio */
+}
+/* =======================
+   --- INFO SECCIÓN --- 
+   ======================== */
+.info {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #fdf6f0;
+  color: #3b2416;
+  font-family: 'Montserrat', sans-serif; /* unificado con el resto de la página */
+}
+
+.info h2 {
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif; /* ahora igual que el resto */
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.info p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  font-family: 'Montserrat', sans-serif; /* unificado */
+}
+
+.info-icons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.icon-item {
+  max-width: 200px;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif; /* unificado */
+}
+
+.icon-item p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif; /* unificado */
+}
+
+.icon-item:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Testimonios horizontales centrados */
+.testimonials {
+  display: flex;
+  justify-content: center; /* centra los elementos dentro del contenedor */
+  overflow-x: auto;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.testimonials::-webkit-scrollbar {
+  display: none; /* Chrome, Safari y Opera */
+}
+
+.testimonial {
+  flex: 0 0 300px;
+  background-color: #fff8f2;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  scroll-snap-align: center; /* centra el cuadro al hacer scroll */
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* CTA renombrado a CITA */
+.cita {
+  margin-top: 2rem;
+}
+
+.cita p {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-family: 'Montserrat', sans-serif; /* unificado */
+}
+
+.cita .btn {
+  padding: 10px 25px;
+  background-color: #3b2416;
+  color: white;
+  font-weight: 700;
+  border: 2px solid #3b2416;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif; /* unificado */
+}
+
+.cita .btn:hover {
+  background-color: #6ab04c;
+  border-color: #6ab04c;
+}
+
+@media (max-width: 768px) {
+  .info-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cita p {
+    font-size: 1.1rem;
+  }
+}
+
+
+/* ================================
+   --- UBICACIÓN ---
+   ================================ */
+.ubicacion { display: flex; justify-content: space-between; align-items: center; background-color: #fff8f2; padding: 3rem 5%; flex-wrap: wrap; }
+.ubicacion-texto { max-width: 400px; }
+.ubicacion-mapa iframe { width: 400px; height: 250px; border-radius: 10px; border: 2px solid #d1b89c; transition: transform 0.2s ease; }
+.ubicacion-mapa iframe:hover { transform: scale(1.03); }
+
+/* ================================
+   --- FOOTER ---
+   ================================ */
+.footer { background-color: #f3d9b0; padding: 3rem 5%; color: #3b2416; font-size: 0.9rem; }
+
+.footer-top { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-between; margin-bottom: 2rem; }
+.footer-links-section, .footer-contact, .footer-newsletter { flex: 1; min-width: 250px; }
+
+.footer-links-section ul { list-style: none; padding: 0; margin-top: 0.5rem; }
+.footer-links-section ul li { margin-bottom: 0.5rem; }
+.footer-links-section ul li a { color: #3b2416; text-decoration: none; }
+.footer-links-section ul li a:hover { text-decoration: underline; }
+
+.footer-contact a { color: #3b2416; text-decoration: none; }
+.footer-contact a:hover { text-decoration: underline; }
+
+.footer-newsletter form { display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.5rem; }
+.footer-newsletter input[type="email"] { padding: 0.5rem; border-radius: 5px; border: 1px solid #d1b89c; }
+.footer-newsletter button { padding: 0.5rem; border: none; border-radius: 5px; background-color: #3b2416; color: #fff; font-weight: 700; cursor: pointer; }
+.footer-newsletter button:hover { background-color: #6ab04c; }
+
+.footer-middle { display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; }
+.footer-middle img { max-height: 50px; }
+
+.footer-bottom { text-align: center; }
+.footer-bottom a { color: #3b2416; text-decoration: none; margin: 0 0.3rem; }
+.footer-bottom a:hover { text-decoration: underline; }

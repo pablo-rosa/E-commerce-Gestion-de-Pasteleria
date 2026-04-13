@@ -1,0 +1,8 @@
+com.gestion.gestion_usuarios
+com.gestion.gestion_usuarios.configuracion
+com.gestion.gestion_usuarios.controladores
+com.gestion.gestion_usuarios.daos
+com.gestion.gestion_usuarios.dtos
+com.gestion.gestion_usuarios.repositorios
+com.gestion.gestion_usuarios.seguridad
+com.gestion.gestion_usuarios.servicios

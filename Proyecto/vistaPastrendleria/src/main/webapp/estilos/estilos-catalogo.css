@@ -1,0 +1,145 @@
+/* ================================
+   --- CATÁLOGO DE PASTELES --- 
+   ================================ */
+
+.catalogo {
+  text-align: center;
+  padding: 5rem 2rem;
+  background-color: #f9f2e7; /* Color suave, pastel, más cálido */
+}
+
+.catalogo h2 {
+  font-size: 3rem; /* Un poco más grande para un efecto de impacto */
+  font-weight: 800;
+  margin-bottom: 2.5rem;
+  color: #3b2416; /* Color marrón oscuro (combinación perfecta con pasteles) */
+  text-transform: uppercase; /* Da un toque más profesional */
+  letter-spacing: 2px;
+}
+
+.productos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.producto {
+  max-width: 270px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra más suave para darle un toque de profundidad */
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border: 1px solid #f0e1d4; /* Borde suave en color beige claro */
+}
+
+.producto img {
+  width: 100%;
+  height: 220px; /* Mayor altura para una presentación más destacada */
+  object-fit: cover;
+  border-bottom: 3px solid #f0e1d4; /* Separación sutil entre la imagen y el contenido */
+}
+
+.producto h3 {
+  font-size: 1.3rem;
+  margin: 1rem 0 0.5rem 0;
+  color: #3b2416;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.producto p {
+  font-size: 1rem;
+  color: #6d4f3b;
+  padding: 0 1rem 1.5rem 1rem;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.4;
+}
+
+.producto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Sombra más profunda al hacer hover */
+}
+
+.producto a {
+  text-decoration: none;
+  color: #3b2416;
+}
+
+.producto a:hover {
+  color: #6ab04c; /* Un verde suave para resaltar el enlace */
+}
+
+/* ================================
+   --- FILTRO DE CATEGORÍAS --- 
+   ================================ */
+
+.filtro-categorias {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #f9f2e7; /* Fondo suave para las categorías */
+  border-radius: 8px;
+  margin-bottom: 3rem;
+}
+
+.filtro-categorias h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #3b2416;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase; /* Efecto de mayúsculas para hacer el título más llamativo */
+  letter-spacing: 1px;
+}
+
+.filtro-categorias label {
+  display: inline-block;
+  margin-right: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #3b2416;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.filtro-categorias input[type="checkbox"] {
+  accent-color: #6ab04c; /* Colores de los checkboxes en verde claro */
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.filtro-categorias button {
+  margin-top: 1.5rem;
+  padding: 12px 30px;
+  background-color: #3b2416;
+  color: white;
+  font-weight: 700;
+  border: 2px solid #3b2416;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  font-size: 1.1rem;
+}
+
+.filtro-categorias button:hover {
+  background-color: #6ab04c;
+  border-color: #6ab04c;
+  cursor: pointer;
+}
+
+/* ================================
+   --- TIPS ADICIONALES --- 
+   ================================ */
+
+/* Transición suave para el hover de los elementos del catálogo */
+.producto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Mejorada la sombra al pasar el ratón */
+}
+
+/* Estilo general de los checkboxes */
+.filtro-categorias input[type="checkbox"]:checked {
+  background-color: #6ab04c; /* Indicador verde cuando está seleccionado */
+}
